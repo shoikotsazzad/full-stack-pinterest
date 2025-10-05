@@ -1,11 +1,17 @@
-
-
-const postInteractions = () => {
+import Image from '../image/Image'
+import './postInteractions.css'
+const PostInteractions = () => {
   return (
-    <div className='postInteractions'>
-      PostInteractions
+    <div className="postInteractions">
+      <div className="interactionIcons">
+        <Image path="/general/react.svg" alt=""/>
+        273
+        <Image path="/general/share.svg" alt=""/>
+        <Image path="/general/more.svg" alt=""/>
+      </div>
+      <button>Save</button>
     </div>
   )
 }
 
-export default postInteractions
+export default PostInteractions
