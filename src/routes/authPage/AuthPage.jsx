@@ -10,10 +10,10 @@ function AuthPage() {
   return (
     <div className='authPage'>
       <div className="authContainer">
-        <Image path="/general/logo.png" alt="" />
+        <Image path="/general/logo.png" w={36} h="36" alt="" />
         <h1>{isRegister ? "Create an Account" : "Login to your account"}</h1>
         {isRegister ? (
-          <form>
+          <form key="register">
             <div className="formGroup">
               <label htmlFor="username">Username</label>
               <input type="username" placeholder='Username' required name="username" id="username" />
@@ -37,7 +37,7 @@ function AuthPage() {
             {error && <p className='error'>{error}</p>}
           </form>
         ) : (
-          <form>
+          <form key="loginForm">
             <div className="formGroup">
               <label htmlFor="email">Email</label>
               <input type="email" placeholder='Email' required name="email" id="email" />
