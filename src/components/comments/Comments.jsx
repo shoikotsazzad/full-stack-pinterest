@@ -29,7 +29,7 @@ const Comments = ({ id }) => {
         }
       </div>
       {/* Comment Form */}
-      <CommentForm />
+      <CommentForm id={id} />
     </div>
   )
 }
